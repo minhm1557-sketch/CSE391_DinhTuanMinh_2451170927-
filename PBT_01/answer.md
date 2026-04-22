@@ -54,3 +54,27 @@ Khi gõ `https://shopee.vn`:
 
 
 **Nguồn:** 04_visible_part_html.md – Phần 3: Semantic Elements
+---
+
+## Câu A4
+
+**Sự khác nhau giữa thead, tbody và tfoot:**
+
+1. Vai trò: thead để hiển thị phần header của bảng, tbody hiển thị data của bảng còn tfoot hiển thị footer của bảng.
+
+2. Nội dung: thead chứa tiêu đề của cột (được in đậm), tbody chứa những dữ liệu chính và tfoot tổng kết dữ liệu bảng
+
+**Lí do không nên dùng table để tạo layout trang web:**
+
+1. screen reader đọc th như tiêu đề cột, không phải data như td.
+
+2. Khó render từng phần để chỉnh sửa giao diện.
+
+3. Phải lồng nhiều bảng vào nhau dễ dẫn đến code rối và khó điều chỉnh
+
+**Nguồn:** 04_visible_part_html.md – Phần 3 và 7.
+---
+
+
+
+
