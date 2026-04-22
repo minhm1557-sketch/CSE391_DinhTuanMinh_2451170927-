@@ -76,7 +76,7 @@ Khi gõ `https://shopee.vn`:
 ---
 
 # Phần B
-## Câu B2
+## Câu B3
 
 **10 lỗi:**
 
@@ -102,7 +102,15 @@ Khi gõ `https://shopee.vn`:
 
 11. Dòng 45 - Không đóng thẻ p - thêm thẻ `</p>`.
 
+## Câu B4 
 
+**1:**
+![](/pic/semantic)
+
+1. Từ dòng thứ 4 đến dòng thứ 10 đã sử dụng div cho dữ liệu dạng bảng thay vì dùng table.
+2. 
+**2:**
+![](image.png)
 
 
 
