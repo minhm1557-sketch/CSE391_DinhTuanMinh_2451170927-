@@ -10,6 +10,8 @@ Khi gõ `https://shopee.vn`:
 5. Chrome nhận file → parse → render → hiển thị.
 
 **Nguồn:** 01_introduction_html_universe.md: Phần 0. 🎬 Opening Hook.
+---
+
 ## Câu A2
 
 **Code:**
@@ -39,15 +41,16 @@ Khi gõ `https://shopee.vn`:
 2. `<div class="menu"> ... </div>` → dùng `<nav> ... </nav>`
 
 3. `<div class="image"><img src="iphone.jpg"></div>`  
-   → đổi thành:
-   ```html
-   <figure class="image">
-       <img src="iphone.jpg" alt="iPhone 16 Pro">
-   </figure>
-   ```
+   → đổi thành `<figure><img src="iphone.jpg" alt="iPhone 16 Pro"></figure>`
 
 4. `<div class="footer">© 2026 ShopTLU</div>`  
    → dùng `<footer>© 2026 ShopTLU</footer>`
 
-**Nguồn:** *04_visible_part_html.md – Phần 3: Semantic Elements*
+5. `<div class="title">iPhone 16 Pro</div>`  
+   → dùng `<h2>iPhone 16 Pro</h2>`
 
+6. `<div class="product"> ... </div>`  
+   → dùng `<article class="product"> ... </article>`
+
+
+**Nguồn:** 04_visible_part_html.md – Phần 3: Semantic Elements
