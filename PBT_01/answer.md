@@ -70,10 +70,38 @@ Khi gõ `https://shopee.vn`:
 
 2. Khó render từng phần để chỉnh sửa giao diện.
 
-3. Phải lồng nhiều bảng vào nhau dễ dẫn đến code rối và khó điều chỉnh
+3. Phải lồng nhiều bảng vào nhau dễ dẫn đến code rối và khó điều chỉnh.
 
 **Nguồn:** 04_visible_part_html.md – Phần 3 và 7.
 ---
+
+# Phần B
+## Câu B2
+
+**10 lỗi:**
+
+1. Dòng 1 - Lỗi thiếu html trong thẻ DOCTYPE - thêm html sau DOCTYPE.
+
+2. Dòng 4 - Thiếu thẻ đóng cho thẻ tiltle - thêm thẻ `</tiltle>`.
+
+3. Dòng 5 - charset bị sai - sửa thành UTF-8.
+
+4. Dòng 8 - Thẻ đóng của h1 thiếu dấu / - thêm dấu / ở thẻ đóng của h1.
+
+5. Dòng 12 - Thẻ đóng của a thiếu dấu / - thêm dấu / ở thẻ đóng của a.
+
+6. Dòng 20 - Thẻ img thuộc tính src thiếu ngoặc kép - thêm ngoặc kép bọc iphone.jpg của thuộc tính src trong thẻ img.
+
+7. Dòng 22 - Thẻ p và thẻ b bị sai thứ tự - đổi chỗ thẻ `</p>` và thẻ `</b>`.
+
+8. Dòng 22 - Thẻ b sai semantic - đổi thẻ b thành strong.
+
+9. Dòng 28 - thiếu thead - thêm thẻ thead bọc dòng 28 đến 31.
+
+10. Dòng 28 - Dùng td cho header - đổi td thành th.
+
+11. Dòng 45 - Không đóng thẻ p - thêm thẻ `</p>`.
+
 
 
 
