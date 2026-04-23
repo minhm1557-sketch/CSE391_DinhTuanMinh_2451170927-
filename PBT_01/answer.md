@@ -78,7 +78,7 @@ Khi gõ `https://shopee.vn`:
 # Phần B
 ## Câu B3
 
-**11 lỗi:**
+**12 lỗi:**
 
 1. Dòng 1 - Lỗi thiếu html trong thẻ DOCTYPE - thêm html sau DOCTYPE.
 
@@ -101,6 +101,8 @@ Khi gõ `https://shopee.vn`:
 10. Dòng 28 - Dùng td cho header - đổi td thành th.
 
 11. Dòng 45 - Không đóng thẻ p - thêm thẻ `</p>`.
+
+12. Dòng 53 - Chưa đóng thẻ html - thêm thẻ `</html>`
 
 ## Câu B4 
 
