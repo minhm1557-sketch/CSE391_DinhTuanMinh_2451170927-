@@ -78,7 +78,7 @@ Khi gõ `https://shopee.vn`:
 # Phần B
 ## Câu B3
 
-**10 lỗi:**
+**11 lỗi:**
 
 1. Dòng 1 - Lỗi thiếu html trong thẻ DOCTYPE - thêm html sau DOCTYPE.
 
