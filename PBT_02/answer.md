@@ -50,3 +50,22 @@
 3. aria-label dùng để thay thế label (đặt tên cho những phần tử nhưng không hiển thị như label, vd: button). Không nên dùng aria-label khi đã có label có thể dẫn đến screen reader đọc sai.
 
 **Nguồn:** 07_forms_interactive.md: Accessibility — Form cho mọi người
+
+---
+
+## Câu A4
+1. loading="lazy" trong thẻ `<img>` để trì hoãn load ảnh khi người dùng chưa scroll đến gần ảnh, giúp giảm băng thông, trang load nhanh hơn. Không lazy load ảnh "above the fold" (ảnh hero, logo, ảnh đầu tiên user thấy), chỉ lazy load ảnh bên dưới. 
+
+2. Cung cấp nhiều `<source>`trong thẻ `<video>` để video có thể tương thích với nhiều trình duyệt (vì không phải trình duyệt nào cũng hỗ trợ 1 định dạng video nhất định). 3 format video web phổ biến: .mp4, .webm, .ogv
+
+3. Thuộc tính alt trên `<img>` dùng để mô tả ảnh cho screen reader và khi ảnh bị lỗi. alt cho các trường hợp:
+
+    Ảnh sản phẩm iPhone 16: alt="iPhone 16"
+
+    Ảnh trang trí (decorative): bỏ trống
+
+    Ảnh biểu đồ doanh thu Q1/2026:  alt="Biểu đồ doanh thu quý 1 năm 2026"
+
+**Nguồn:** 06_graphics_multimedia.md: `<img>` — Best Practices 
+
+---
