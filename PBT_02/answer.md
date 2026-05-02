@@ -12,7 +12,7 @@
 9. type="radio" -> Ô chọn 1 trong nhiều (cùng name), required -> dùng cho những lựa chọn chỉ chọn 1 (giới tính)
 10. type="url" -> Ô nhập link url, kiểm tra định dạng url (http://, https://, ...) -> dùng để nhập đường dẫn
 
-**Nguồn:** 07_forms_interactive.md: 3. ⚙️ Core Technical Truth
+**Nguồn:** 07_forms_interactive.md: 3. ⚙️ Core Technical Truth.
 
 ---
 
@@ -49,7 +49,7 @@
 ```
 3. aria-label dùng để thay thế label (đặt tên cho những phần tử nhưng không hiển thị như label, vd: button). Không nên dùng aria-label khi đã có label có thể dẫn đến screen reader đọc sai.
 
-**Nguồn:** 07_forms_interactive.md: Accessibility — Form cho mọi người
+**Nguồn:** 07_forms_interactive.md: Accessibility — Form cho mọi người.
 
 ---
 
@@ -64,8 +64,10 @@
 
     Ảnh trang trí (decorative): bỏ trống
 
-    Ảnh biểu đồ doanh thu Q1/2026:  alt="Biểu đồ doanh thu quý 1 năm 2026"
+    Ảnh biểu đồ doanh thu Q1/2026:  alt="Biểu đồ doanh thu quý 1 năm 2026" 
 
-**Nguồn:** 06_graphics_multimedia.md: `<img>` — Best Practices 
+**Nguồn:** 06_graphics_multimedia.md: `<img>` — Best Practices.
 
 ---
+
+## Câu A5
