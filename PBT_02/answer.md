@@ -75,3 +75,7 @@
 1. Dùng cách 1 khi chỉ có ảnh đơn giản, đứng độc lập; dùng cách 2 khi ảnh kèm với chú thích
 
 2. Ví dụ cho cách 1: icon, ảnh trang trí,..; ví dụ cho cách 2: ảnh sản phẩm, ảnh biểu đồ,..
+
+# Phần B
+## Câu B1
+
