@@ -19,14 +19,14 @@
 ## Câu A2
 
 1. Trường hợp 1: không submit được tại để trống khi có required
-!(pic/A2_TH1.png)
+![alt text](pic/A2_TH1.png)
 2. Trường hợp 2: không submit được tại không có @ khi type là email
-!(pic/A2_TH2.png)
+![alt text](pic/A2_TH2.png)
 3. Trường hợp 3: không submit được vì 15 quá giá trị max là 10
-!(pic/A2_TH3.png)
+![alt text](pic/A2_TH3.png)
 4. Trường hợp 4: không submit được vì pattern chỉ cho nhập số
-!(pic/A2_TH4.png)
+![alt text](pic/A2_TH4.png)
 5. Trường hợp 5: không submit được vì 123 chỉ có độ dài là 3 ít hơn độ dài min là 8
-!(pic/A2_TH5.png)
+![alt text](pic/A2_TH5.png)
 
 ---
