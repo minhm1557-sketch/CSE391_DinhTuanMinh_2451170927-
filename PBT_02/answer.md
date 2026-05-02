@@ -30,3 +30,23 @@
 ![alt text](pic/A2_TH5.png)
 
 ---
+
+## Câu A3
+1. `<label for="email">` quan trọng cho screen reader vì screen reader dựa vào label để đọc tên của input từ đó biết input này phục vụ mục đích gì
+2. `<fieldset>` + `<legend>` dùng khi có 1 nhóm input phục vụ mục đích giống nhau, ví dụ:
+```html
+<fieldset>
+  <legend>Phương thức thanh toán</legend>
+
+  <label>
+    <input type="radio" name="payment"> COD
+  </label>
+
+  <label>
+    <input type="radio" name="payment"> Visa
+  </label>
+</fieldset>
+```
+3. aria-label dùng để thay thế label (đặt tên cho những phần tử nhưng không hiển thị như label, vd: button). Không nên dùng aria-label khi đã có label có thể dẫn đến screen reader đọc sai.
+
+**Nguồn:** 07_forms_interactive.md: Accessibility — Form cho mọi người
