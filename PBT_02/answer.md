@@ -115,3 +115,14 @@
 
 --- 
 
+## Câu C2
+
+1. pattern regex cho CMND/CCCD và Số tài khoản:
+  `<input type="text" required id="CCCD" name="CCCD" pattern="[0-9]{12}">`
+  `<input type="text" required id="account_number" name="account_number" pattern="[0-9]{10,15}">`
+
+2. Không đủ an toàn vì: người dùng có thể chỉnh html ngay trên DevTools
+
+3. Html không thể: so sánh giá trị (mật khẩu và xác nhận mật khẩu), truy vấn csdl, kiểm tra có điều kiện (mỗi quốc gia có một format số điện thoại khác nhau)
+
+
