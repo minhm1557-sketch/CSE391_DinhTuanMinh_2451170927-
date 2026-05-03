@@ -1,4 +1,5 @@
 # Phần A
+
 ## Câu A1
 
 1. type="email" -> Ô nhập text, tự kiểm tra có @ -> dùng cho form đăng ký
