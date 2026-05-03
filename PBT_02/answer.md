@@ -77,5 +77,41 @@
 2. Ví dụ cho cách 1: icon, ảnh trang trí,..; ví dụ cho cách 2: ảnh sản phẩm, ảnh biểu đồ,..
 
 # Phần B
-## Câu B1
+
+# Phần C
+
+## Câu C1
+
+1. Lỗi 1: Dòng 1, `<form>` thiếu method và action, vi phạm best practices 
+-> sửa thành `<form action="" method="post">
+
+2. Lỗi 2: Dòng 2, input tên thiếu label, vi phạm accessibility
+-> thêm `<label for="name"> Tên: <\label>` 
+
+3. Lỗi 3: Dòng 4, input email thiếu label, không có id, name và required , vi phạm vi phạm validation, accessibility và best practices
+-> sửa thành ` <input type="email" placeholder="Email của bạn" id="email" name="email" required>` và thêm `<label for="email">`
+
+4. Lỗi 4: Dòng 6, input password thiếu label, không có id, name và required, vi phạm vi phạm validation, accessibility và best practices
+-> sửa thành ` <input type="email" placeholder="Email của bạn" id="email" name="email" required>` và thêm `<label for="email">`
+-> sửa thành `<input type="password" placeholder="Mật khẩu" id="password" name="password >` và thêm `<label for="password">`
+
+5. Lỗi 5: Dòng 7, input password (nhập lại mật khẩu) thiếu label, không có id, name và required, vi phạm vi phạm validation, accessibility và best practices
+-> sửa thành `<input type="password" placeholder="Mật khẩu" id="confirm-password" name="confirm_password" required>` và thêm `<label for="confirm-password">`
+
+6. Lỗi 6: Dòng 9, số điện thoại dùng text thay vì tel và để sẵn value, thiếu label và không có id, name, required, vi phạm validation, accessibility và best practices
+-> sửa thành `<input type="tel" id="phone_number" name="phone_number" required>` và thêm `<label for="phone_number">`
+
+7. Lỗi 7: Dòng 11, select thiếu label, không có name, id và required, vi phạm validation, accessibility và best practices
+-> sửa thành ```html 
+              <select id="city" name="city" required>
+                <option>Hà Nội</option>
+                <option>TP.HCM</option>
+              </select> 
+              ```
+  và thêm `<label for="city">Thành phố:</label>`
+
+8. Lỗi 8: Dòng 15, thiếu checkbox cho label "Tôi đồng ý điều khoản", vi phạm validation, accessibility và best practices
+-> thêm `<input type="checkbox" id="agree" name="agree" required>`
+
+--- 
 
