@@ -83,3 +83,9 @@ Rule D: p.price
 
 **Nguồn:** 09_css_selectors.md: Specificity — "Ai thắng khi xung đột?"
 
+# Phần B
+
+## Câu 1
+
+- Các selectors đã dùng: id, element, class, pseudo-class, descendant
+
