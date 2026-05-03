@@ -87,5 +87,5 @@ Rule D: p.price
 
 ## Câu 1
 
-- Các selectors đã dùng: id, element, class, pseudo-class, descendant
+- Các selectors đã dùng: id, element, class, pseudo-class, descendant, universal
 
