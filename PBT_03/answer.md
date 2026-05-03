@@ -30,7 +30,6 @@
 
 ## Câu A2
 
-
 1. h1                           → Chọn: "ShopTLU"
 2. .price                       → Chọn: "25.990.000đ", "45.990.000đ"
 3. #app header                  → Chọn: "ShopTLU Home Products About"
@@ -39,3 +38,20 @@
 6. article > p                  → Chọn: "25.990.000đ", "Mô tả sản phẩm...", "45.990.000đ", "Mô tả sản phẩm..."
 7. a[href="/"]                  → Chọn: "Home"
 8. .top-bar.dark h1              → Chọn: "ShopTLU"
+
+## Câu A3
+
+1. Trường hợp 1
+→ Chiều rộng thực tế = 400 + 20*2 + 5*2 = 450px
+→ Không gian chiếm trang = 450 + 10*2 = 470px
+
+2. Trường hợp 2:
+→ Chiều rộng thực tế = 400px
+→ Kích thước content thực tế = 400 - 20*2 - 5*2 = 350px
+→ Không gian chiếm trang = 400 + 10*2 = 420px
+
+3. Trường hợp 3:
+→ Khoảng cách giữa 2 box = max(25, 40) = 40px
+→ Không phải 65px vì margin dọc không cộng, lấy giá trị lớn hơn
+
+## Câu A4
