@@ -85,7 +85,28 @@ Rule D: p.price
 
 # Phần B
 
-## Câu 1
+## Câu B1
 
 - Các selectors đã dùng: id, element, class, pseudo-class, descendant, universal
+
+# Phần C
+
+## Câu C1
+
+1. Chiều rộng thực tế của sidebar: 300 + 20*2 + 1*2 = 342px
+   Chiều rộng thực tế của content: 660 + 30*2 + 1*2 = 722px
+
+2. Layout bị vỡ do chiều rộng của container cha là 960 trong khi tổng chiều rộng thực tế của sidebar và content là 342 + 722 = 1064px > 960px
+
+3. Cách 1: Thêm ở trên đầu css
+    ```
+    * {
+        box-sizing: border-box;
+    }
+    ```
+   Cách 2: Tự chỉnh lại độ rộng của container cha, sidebar và content sao cho độ rộng thực thế của container = sidebar + content 
+
+4. 
+
+
 
