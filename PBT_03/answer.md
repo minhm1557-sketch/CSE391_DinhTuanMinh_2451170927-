@@ -30,6 +30,8 @@
 
 **Nguồn:** 08_introduction_css.md: 3. ⚙️ Core Technical Truth
 
+---
+
 ## Câu A2
 
 1. h1                           → Chọn: "ShopTLU"
@@ -42,6 +44,8 @@
 8. .top-bar.dark h1              → Chọn: "ShopTLU"
 
 **Nguồn:** 09_css_selectors.md: 🌐 Big Picture — Bản đồ Selectors
+
+---
 
 ## Câu A3
 
@@ -59,6 +63,8 @@
 → Không phải 65px vì margin dọc không cộng, lấy giá trị lớn hơn
 
 **Nguồn:** 11_box_model.md
+
+---
 
 ## Câu A4
 
@@ -106,7 +112,22 @@ Rule D: p.price
     ```
    Cách 2: Tự chỉnh lại độ rộng của container cha, sidebar và content sao cho độ rộng thực thế của container = sidebar + content 
 
-4. 
+4. Chứng minh 2 cách qua 2 file html debug_layout.html, debug_layout2.html và 2 file debug_layout.css, debug_layout2.css
+
+---
+
+## Câu C2
+
+1. Sản phẩm A có font-size là 14px và có color là blue
+
+2. "Mô tả sản phẩm" có color là blue
+
+3. "Sản phẩm B" có font-size là 20px và có color là blue
+
+4. "Mô tả sản phẩm B" có color là green
+
+
+
 
 
 
