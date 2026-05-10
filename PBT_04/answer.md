@@ -27,3 +27,5 @@
 5. Trường hợp 5: 3 cột, 3 hàng 6 items đầu sẽ fill 2 hàng đầu và item thứ 7 sẽ ở ô cột 1 hàng 3
 
 ![alt text](pic/A2_1.jpg) ![alt text](pic/A2_2.jpg)
+
+---
