@@ -47,3 +47,11 @@
 5. Dùng Flexbox: layout 1 chiều (theo chiều dọc)
 
 ---
+
+## Câu C2
+
+1. Thiếu flex-direction: column; cho .card và margin-top: auto; cho .card .btn
+
+2. Thiếu justify-content: center; và align-items: center; cho .hero 
+
+3. Cố định lại sidebar:  max-width: 250px; min-width: 180px;
