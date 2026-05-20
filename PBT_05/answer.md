@@ -221,3 +221,120 @@ Lợi ích
 - Dễ xây dựng component
 
 ---
+
+# Phần C
+## Câu C1
+
+Phân tích Responsive Design của YouTube
+
+1. Mobile (375px)
+
+Đặc điểm:
+
+- Navigation chuyển thành:
+  - Menu hamburger ở góc trái
+  - Thanh tìm kiếm thu gọn thành icon
+  - Bottom navigation xuất hiện ở cuối màn hình
+
+- Content:
+  - Video hiển thị 1 cột
+
+- Elements bị ẩn:
+  - Sidebar đầy đủ
+  - Một số text menu
+  - Thanh category dài bị rút gọn
+
+- Font size:
+  - Nhỏ hơn desktop để phù hợp màn hình nhỏ
+
+2. Tablet (768px)
+
+Đặc điểm:
+
+- Navigation:
+  - Sidebar thu gọn dạng icon
+  - Search bar hiển thị đầy đủ hơn mobile
+
+- Content:
+  - Hiển thị khoảng 2–3 cột video
+
+- Elements bị ẩn:
+  - Một số text trong sidebar
+
+- Font size:
+  - Lớn hơn mobile một chút
+
+3. Desktop (1440px)
+
+Đặc điểm:
+
+- Navigation:
+  - Sidebar đầy đủ
+  - Search bar dài
+  - Nhiều menu và shortcut hơn
+
+- Content:
+  - Hiển thị khoảng 4–6 cột video
+
+- Elements bị ẩn:
+  - Hầu như không có
+
+- Font size:
+  - Lớn và dễ đọc hơn mobile
+
+So sánh Responsive
+
+| Thành phần | Mobile | Tablet | Desktop |
+|---|---|---|---|
+| Navigation | Hamburger + bottom nav | Sidebar icon | Sidebar đầy đủ |
+| Số cột video | 1 | 2–3 | 4–6 |
+| Search bar | Thu gọn | Trung bình | Đầy đủ |
+| Sidebar | Ẩn | Thu gọn | Hiển thị đầy đủ |
+| Font size | Nhỏ | Trung bình | Lớn |
+
+
+Media Queries của YouTube
+
+Media Query 1
+
+```css
+@media (max-width: 656px) {
+  #guide {
+    display: none;
+  }
+}
+```
+
+Ý nghĩa:
+
+- Khi màn hình nhỏ hơn 656px:
+  - Sidebar bị ẩn
+  - Giao diện tối ưu cho mobile
+
+
+Media Query 2
+
+```css
+@media (min-width: 1000px) {
+  #contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+```
+
+Ý nghĩa:
+
+- Khi màn hình lớn:
+  - Layout chuyển thành nhiều cột
+  - Hiển thị nhiều video hơn trên 1 hàng
+
+
+Kết luận
+
+YouTube sử dụng Responsive Design bằng:
+
+- CSS Grid và Flexbox
+- Media Queries
+- Ẩn/hiện navigation theo kích thước màn hình
+- Điều chỉnh số cột video động
+- Tối ưu trải nghiệm mobile-first
