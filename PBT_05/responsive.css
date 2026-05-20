@@ -1,0 +1,204 @@
+:root {
+  --bg: #f7f7f7;
+  --card: #ffffff;
+  --accent: #0a74da;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: #111;
+  font-size: 16px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.layout {
+  display: block;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  display: none;
+  margin-bottom: 16px;
+}
+
+.ads {
+  display: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h4 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.price {
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.buy {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 24px;
+  background: #fff;
+}
+
+#nav-toggle:checked ~ .main-nav {
+  display: block;
+}
+
+.main-nav {
+  display: none;
+  padding-top: 8px;
+}
+
+.main-nav ul {
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16.5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 16px;
+  }
+
+  .ads {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .sidebar {
+    margin: 0;
+  }
+
+  .ads {
+    display: block;
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .product-area {
+    padding: 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
