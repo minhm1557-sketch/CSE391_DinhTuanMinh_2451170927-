@@ -70,3 +70,154 @@
 **Nguồn:** Không có
 
 ## Câu A4
+
+1. Variables
+
+SCSS cho phép tạo biến để lưu giá trị dùng nhiều lần.
+
+Ví dụ
+
+```scss
+$primary-color: blue;
+$text-color: white;
+
+button {
+    background: $primary-color;
+    color: $text-color;
+}
+```
+
+Lợi ích
+- Dễ đổi màu/theme
+- Tránh lặp code
+- Dễ bảo trì
+
+---
+
+
+2. Nesting
+
+SCSS cho phép viết CSS lồng nhau theo cấu trúc HTML.
+
+Ví dụ
+
+```scss
+.navbar {
+    background: black;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: white;
+    }
+}
+```
+
+CSS sau khi compile
+
+```css
+.navbar {
+    background: black;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: white;
+}
+```
+
+Lợi ích
+- Code dễ đọc
+- Thấy rõ quan hệ cha-con
+- Tổ chức CSS tốt hơn
+
+---
+
+
+3. Mixins
+
+Mixins giúp tái sử dụng nhiều đoạn CSS.
+
+Ví dụ
+
+```scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    @include flex-center;
+}
+```
+
+CSS sau khi compile
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+Lợi ích
+- Tái sử dụng code
+- Giảm lặp CSS
+- Dễ quản lý responsive/flex/grid
+
+---
+
+
+4. @extend / Inheritance
+
+Cho phép một class kế thừa CSS từ class khác.
+
+Ví dụ
+
+```scss
+.button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.primary-button {
+    @extend .button;
+    background: blue;
+}
+```
+
+CSS sau khi compile
+
+```css
+.button,
+.primary-button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.primary-button {
+    background: blue;
+}
+```
+
+Lợi ích
+- Kế thừa style
+- Giảm lặp code
+- Dễ xây dựng component
+
+---
