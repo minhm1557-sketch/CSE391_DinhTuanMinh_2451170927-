@@ -77,7 +77,7 @@ SCSS cho phép tạo biến để lưu giá trị dùng nhiều lần.
 
 Ví dụ
 
-```scss
+```
 $primary-color: blue;
 $text-color: white;
 
@@ -101,7 +101,7 @@ SCSS cho phép viết CSS lồng nhau theo cấu trúc HTML.
 
 Ví dụ
 
-```scss
+```
 .navbar {
     background: black;
 
@@ -121,7 +121,7 @@ Ví dụ
 
 CSS sau khi compile
 
-```css
+```
 .navbar {
     background: black;
 }
@@ -153,7 +153,7 @@ Mixins giúp tái sử dụng nhiều đoạn CSS.
 
 Ví dụ
 
-```scss
+```
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -167,7 +167,7 @@ Ví dụ
 
 CSS sau khi compile
 
-```css
+```
 .container {
     display: flex;
     justify-content: center;
@@ -189,7 +189,7 @@ Cho phép một class kế thừa CSS từ class khác.
 
 Ví dụ
 
-```scss
+```
 .button {
     padding: 10px;
     border-radius: 5px;
@@ -203,7 +203,7 @@ Ví dụ
 
 CSS sau khi compile
 
-```css
+```
 .button,
 .primary-button {
     padding: 10px;
