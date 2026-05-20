@@ -338,3 +338,194 @@ YouTube sử dụng Responsive Design bằng:
 - Ẩn/hiện navigation theo kích thước màn hình
 - Điều chỉnh số cột video động
 - Tối ưu trải nghiệm mobile-first
+
+---
+
+## Câu C2
+
+Mobile Wireframe (375px)
+
++----------------------+
+| Logo      ☰ Menu     |
+| Phone Icon           |
++----------------------+
+
++----------------------+
+|      Hero Image      |
+|   Restaurant Banner  |
++----------------------+
+
++----------------------+
+|   Food Image 1       |
++----------------------+
+|   Food Image 2       |
++----------------------+
+|   Food Image 3       |
++----------------------+
+|   Food Image 4       |
++----------------------+
+|   Food Image 5       |
++----------------------+
+|   Food Image 6       |
++----------------------+
+
++----------------------+
+|   Booking Form       |
+| Date                 |
+| Time                 |
+| Guests               |
+| Note                 |
+| [ Book Table ]       |
++----------------------+
+
++----------------------+
+|   Google Maps        |
++----------------------+
+
++----------------------+
+|      Footer          |
++----------------------+
+
+
+- Những thứ bị ẩn:
+  - Số điện thoại
+  - Text
+  - Nav
+- Form đặt bàn nằm dưới gallery ảnh
+
+Tablet Wireframe (768px)
+
++-----------------------------------+
+| Logo          Menu      Phone     |
++-----------------------------------+
+
++-----------------------------------+
+|            Hero Image             |
++-----------------------------------+
+
++---------------+-------------------+
+| Food 1        | Food 2            |
++---------------+-------------------+
+| Food 3        | Food 4            |
++---------------+-------------------+
+| Food 5        | Food 6            |
++---------------+-------------------+
+
++-----------------------------------+
+|         Booking Form              |
++-----------------------------------+
+
++-----------------------------------+
+|          Google Maps              |
++-----------------------------------+
+
++-----------------------------------+
+|             Footer                |
++-----------------------------------+
+
+- Grid ảnh hiển thị 2 cột
+- Google Maps nằm dưới form
+
+Desktop Wireframe (1440px)
+
++------------------------------------------------------+
+| Logo      Menu Menu Menu         Phone Booking       |
++------------------------------------------------------+
+
++------------------------------------------------------+
+|                     Hero Image                       |
++------------------------------------------------------+
+
++----------------------+-------------------------------+
+|                      | Food 1     | Food 2           |
+| Booking Form         +------------+------------------+
+| Date                 | Food 3     | Food 4           |
+| Time                 +------------+------------------+
+| Guests               | Food 5     | Food 6           |
+| Note                 |                               |
+| [ Book Table ]       |                               |
++----------------------+-------------------------------+
+
++------------------------------------------------------+
+|                    Google Maps                       |
++------------------------------------------------------+
+
++------------------------------------------------------+
+|                       Footer                         |
++------------------------------------------------------+
+
+Phân tích Desktop:
+
+- Layout chia 2 cột:
+  - Sidebar trái: form đặt bàn
+  - Nội dung phải: gallery món ăn
+- Sidebar xuất hiện cho form đặt bàn
+
+---
+
+CSS Skeleton (Mobile-First)
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+header,
+.hero,
+.booking-form,
+.map,
+footer {
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .booking-form {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+  }
+}
+```
+
+---
