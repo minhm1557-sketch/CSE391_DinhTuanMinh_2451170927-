@@ -61,3 +61,48 @@ Không cần viết `col-sm-12` vì:
 ---
 
 ## Câu A2
+
+1. `d-none d-md-block`
+
+- `d-none` → ẩn element
+- `d-md-block` → từ kích thước `md` (≥768px) trở lên sẽ hiển thị dạng `block`
+
+Kết quả:
+- `<768px` → bị ẩn
+- `≥768px` → hiển thị
+
+
+2. Spacing Utilities
+
+| Class | Ý nghĩa |
+|---|---|
+| `mt-3` | margin-top mức 3 |
+| `mb-auto` | margin-bottom tự động |
+| `ms-2` | margin-left mức 2 |
+| `px-4` | padding trái + phải mức 4 |
+| `py-1` | padding trên + dưới mức 1 |
+
+Quy ước:
+- `m` = margin
+- `p` = padding
+- `t` = top
+- `b` = bottom
+- `s` = start (left)
+- `e` = end (right)
+- `x` = trái + phải
+- `y` = trên + dưới
+
+
+3. `.container`, `.container-fluid`, `.container-md`
+
+| Class | Ý nghĩa |
+|---|---|
+| `.container` | width cố định theo từng breakpoint |
+| `.container-fluid` | luôn full width 100% |
+| `.container-md` | full width ở mobile, từ `md` trở lên mới có max-width cố định |
+
+**Nguồn:** tuan_4_css_frameworks/bootstrap/04_utilities/04_utilities.md: 2. 🌐 Big Picture — Cú pháp Utilities, 3. ⚙️ Core Technical Truth
+
+---
+
+# Phần B
