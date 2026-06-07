@@ -57,6 +57,7 @@ console.log("" == false);       // true
 
 ## Câu A4
 
+- Tất cả các giá trị Falsy trong JavaScript:
 
 ```js
 false
@@ -69,7 +70,7 @@ undefined
 NaN
 ```
 
-Dự đoán kết quả:
+- Dự đoán kết quả:
 
 ```js
 if ("0") console.log("A");
@@ -152,3 +153,32 @@ H
 ```
 
 ---
+
+## Câu A5
+
+- Cách 1:
+
+```js
+var greeting = `Xin chào ${name}! Bạn ${age} tuổi.`;
+```
+
+- Cách 2:
+
+```js
+var url = `https://api.example.com/users/${userId}/orders?page=${page}`;
+```
+
+- Cách 3:
+
+```js
+var html = `
+<div class="card">
+    <h2>${title}</h2>
+    <p>${description}</p>
+    <span>Giá: ${price}đ</span>
+</div>
+`;
+```
+
+# Phần B
+## Câu B1
