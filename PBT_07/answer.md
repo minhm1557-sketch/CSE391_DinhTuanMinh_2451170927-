@@ -55,4 +55,100 @@ console.log("" == false);       // true
 
 ---
 
-## Câu 4
+## Câu A4
+
+
+```js
+false
+0
+-0
+0n
+""
+null
+undefined
+NaN
+```
+
+Dự đoán kết quả:
+
+```js
+if ("0") console.log("A");
+```
+
+In:
+
+```txt
+A
+```
+
+```js
+if ("") console.log("B");
+```
+
+Không in.
+
+```js
+if ([]) console.log("C");
+```
+
+In:
+
+```txt
+C
+```
+
+```js
+if ({}) console.log("D");
+```
+
+In:
+
+```txt
+D
+```
+
+```js
+if (null) console.log("E");
+```
+
+Không in.
+
+```js
+if (0) console.log("F");
+```
+
+Không in.
+
+```js
+if (-1) console.log("G");
+```
+
+In:
+
+```txt
+G
+```
+
+```js
+if (" ") console.log("H");
+```
+
+In:
+
+```txt
+H
+```
+
+Vì chuỗi chứa dấu cách vẫn là chuỗi không rỗng.
+
+Kết quả cuối cùng:
+
+```txt
+A
+C
+D
+G
+H
+```
+
+---
