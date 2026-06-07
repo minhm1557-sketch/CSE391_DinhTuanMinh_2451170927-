@@ -181,4 +181,100 @@ var html = `
 ```
 
 # Phần B
-## Câu B1
+
+# Phần C
+## Câu C1
+
+- Các lỗi:
+
+1. Thiếu dấu `;` (không bắt buộc nhưng nên có).
+2. `giaBan` được truyền vào là chuỗi `"100000"` thay vì số.
+3. Không kiểm tra kiểu dữ liệu của `giaBan`.
+4. `if (giaSauGiam = 0)` dùng phép gán `=` thay vì so sánh.
+5. Điều kiện miễn phí nên là `giaSauGiam === 0`.
+6. Dùng `var` trong vòng lặp với `setTimeout` gây lỗi closure.
+7. Nên dùng `let` hoặc `const` thay cho `var`.
+8. Hàm có thể trả về cả Number và String, không nhất quán kiểu dữ liệu.
+
+Code đã sửa:
+
+```js
+function tinhGiaGiamGia(giaBan, phanTramGiam) {
+    if (typeof giaBan !== "number" || isNaN(giaBan)) {
+        return "Giá bán không hợp lệ";
+    }
+
+    if (phanTramGiam < 0 || phanTramGiam > 100) {
+        return "Phần trăm giảm không hợp lệ";
+    }
+
+    const giamGia = giaBan * phanTramGiam / 100;
+    const giaSauGiam = giaBan - giamGia;
+
+    if (giaSauGiam === 0) {
+        console.log("Sản phẩm miễn phí!");
+    }
+
+    return giaSauGiam;
+}
+
+const gia = tinhGiaGiamGia(100000, 20);
+console.log(`Giá sau giảm: ${gia}đ`);
+
+const gia2 = tinhGiaGiamGia(50000, 110);
+console.log(`Giá: ${gia2}`);
+
+for (let i = 0; i < 5; i++) {
+    setTimeout(function () {
+        console.log(`Item ${i}`);
+    }, 1000);
+}
+
+
+- Giải thích lỗi `var` trong vòng lặp:
+
+Code gốc:
+
+```js
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 1000);
+}
+```
+
+Sau khi vòng lặp kết thúc:
+
+```js
+i === 5
+```
+
+Tất cả callback đều dùng chung biến `i`, nên in:
+
+```txt
+5
+5
+5
+5
+5
+```
+
+Sửa bằng `let`:
+
+```js
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 1000);
+}
+```
+
+`let` tạo một biến `i` mới cho mỗi lần lặp, nên kết quả:
+
+```txt
+0
+1
+2
+3
+4
+```
